@@ -67,3 +67,4 @@ totalScore += second_score
 totalScore += third_score
 
 print(totalScore)
+
