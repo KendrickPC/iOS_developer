@@ -26,6 +26,7 @@ let sayYouWontLetGo = Song(title: "Say You Won't Let Go", length: "3.31", artist
 sayYouWontLetGo.artist
 
 // Example 2:
+/*
 struct Beaker {
     var volumeMilliliters: Double
 
@@ -41,10 +42,31 @@ struct Beaker {
     }
 }
 
+let beaker1 = Beaker(volumeMilliliters: 500)
+let beaker2 = Beaker(volumeMilliliters: 1000)
+let canContainContents: Bool = beaker1.canContainContents(otherBeaker: beaker2)
+*/
+ 
+// Example 3:
+struct Beaker {
+    let volumeMilliliters: Double
+    static var madeIn = "China"
 
+    // These are US ounces
+    var volumeOunces: Double {
+        return volumeMilliliters * 0.033814
+    }
+
+    func canContainContents(otherBeaker: Beaker) -> Bool {
+        return volumeMilliliters >= otherBeaker.volumeMilliliters
+    }
+}
 
 let beaker1 = Beaker(volumeMilliliters: 500)
 let beaker2 = Beaker(volumeMilliliters: 1000)
 let canContainContents: Bool = beaker1.canContainContents(otherBeaker: beaker2)
+
+// In fact, when we change the value of a static property with dot notation,
+// we reference the type name and not a specific instance (Beaker.madeIn).
 
 
