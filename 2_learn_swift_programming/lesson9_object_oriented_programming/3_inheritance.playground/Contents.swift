@@ -27,6 +27,8 @@ class ElectricGuitar: Guitar {
     var toneLevel: Float = 1.0
 }
 
+print("Testing")
+
 /*
 Overriding Methods
 Inheritance doesn't just let you add to a class - you can also override its
@@ -34,6 +36,7 @@ behavior. For example, since an electric guitar's volume affects its sound,
 we can provide some custom functionality to the pluck() method.
 */
 
+/*
 override func pluckString() {
     if volumeLevel > 0.7 {
         print("🎸🎸🎸 DRAOWWW")
@@ -44,4 +47,13 @@ override func pluckString() {
         super.pluckString()
     }
 }
+*/
+
+
+// Microsoft Documentation
+// When to Use Inheritance
+// https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/27db6csx(v=vs.90)?redirectedfrom=MSDN
+
+
+
 
