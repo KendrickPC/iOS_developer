@@ -41,11 +41,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="UfK-u4-oLy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="71" id="SsM-zZ-nZz"/>
-                            <constraint firstItem="e3K-9Q-SlX" firstAttribute="top" secondItem="d47-KO-gPV" secondAttribute="bottom" constant="8" id="U6k-S4-H8T"/>
+                            <constraint firstItem="e3K-9Q-SlX" firstAttribute="centerX" secondItem="d47-KO-gPV" secondAttribute="centerX" id="9g7-Id-mkO"/>
+                            <constraint firstItem="UfK-u4-oLy" firstAttribute="centerX" secondItem="e3K-9Q-SlX" secondAttribute="centerX" id="NFI-EP-h5A"/>
+                            <constraint firstItem="UfK-u4-oLy" firstAttribute="top" secondItem="e3K-9Q-SlX" secondAttribute="bottom" constant="17" id="Sgk-ek-DoH"/>
                             <constraint firstItem="d47-KO-gPV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wjh-TO-8Ci"/>
-                            <constraint firstItem="UfK-u4-oLy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ghr-wn-o5g"/>
-                            <constraint firstItem="e3K-9Q-SlX" firstAttribute="centerX" secondItem="d47-KO-gPV" secondAttribute="centerX" id="jgG-fX-WJR"/>
+                            <constraint firstItem="e3K-9Q-SlX" firstAttribute="top" secondItem="d47-KO-gPV" secondAttribute="bottom" constant="8" id="vUa-fG-faQ"/>
                             <constraint firstItem="d47-KO-gPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vct-vJ-TJF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
