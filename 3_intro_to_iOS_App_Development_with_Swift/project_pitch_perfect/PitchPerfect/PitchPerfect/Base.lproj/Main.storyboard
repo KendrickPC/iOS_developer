@@ -10,6 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -19,17 +20,40 @@
                                 <rect key="frame" x="182.5" y="438" width="49" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Brf-yW-R5H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-eR-EXI">
+                                <rect key="frame" x="154" y="499" width="106.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kc-hC-wfw">
+                                <rect key="frame" x="154" y="557" width="106" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop Recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="waI-0n-QMs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5Gm-58-D0Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Itd-cQ-rNJ"/>
-                            <constraint firstItem="5Gm-58-D0Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gt0-0p-qtI"/>
+                            <constraint firstItem="1Kc-hC-wfw" firstAttribute="centerX" secondItem="bhO-eR-EXI" secondAttribute="centerX" id="0mw-Wr-kId"/>
+                            <constraint firstItem="1Kc-hC-wfw" firstAttribute="top" secondItem="bhO-eR-EXI" secondAttribute="bottom" constant="37" id="4CR-bB-hbS"/>
+                            <constraint firstItem="5Gm-58-D0Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Jaa-UY-NDE"/>
+                            <constraint firstItem="5Gm-58-D0Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N5W-rU-qIu"/>
+                            <constraint firstItem="bhO-eR-EXI" firstAttribute="top" secondItem="5Gm-58-D0Z" secondAttribute="bottom" constant="31" id="cao-O4-ArW"/>
+                            <constraint firstItem="bhO-eR-EXI" firstAttribute="centerX" secondItem="5Gm-58-D0Z" secondAttribute="centerX" id="yiN-ZM-mDQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="bhO-eR-EXI" id="TLP-2g-xfl"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </scene>
