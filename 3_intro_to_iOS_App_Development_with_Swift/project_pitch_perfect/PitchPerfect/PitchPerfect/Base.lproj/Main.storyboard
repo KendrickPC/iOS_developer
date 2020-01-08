@@ -24,13 +24,15 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cr8-xm-6Q1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c1-wE-qCD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c1-wE-qCD">
                                 <rect key="frame" x="130" y="587" width="155" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrc-M2-mkp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKx-TS-pOE">
-                                <rect key="frame" x="153.5" y="437.5" width="107" height="21"/>
+                                <rect key="frame" x="154" y="533" width="106.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,10 +40,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="aKx-TS-pOE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gaq-FZ-oYd"/>
+                            <constraint firstItem="aKx-TS-pOE" firstAttribute="centerX" secondItem="uq6-aI-Fx2" secondAttribute="centerX" id="0IK-2f-Dzc"/>
+                            <constraint firstItem="8c1-wE-qCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2cA-O0-NIZ"/>
                             <constraint firstItem="uq6-aI-Fx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IyO-lw-MXF"/>
+                            <constraint firstItem="8c1-wE-qCD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="216.5" id="afc-CN-8YG"/>
+                            <constraint firstItem="aKx-TS-pOE" firstAttribute="top" secondItem="uq6-aI-Fx2" secondAttribute="bottom" constant="7.5" id="nRa-nM-5VJ"/>
                             <constraint firstItem="uq6-aI-Fx2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rv6-84-ZHU"/>
-                            <constraint firstItem="aKx-TS-pOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u9B-ra-s3T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
