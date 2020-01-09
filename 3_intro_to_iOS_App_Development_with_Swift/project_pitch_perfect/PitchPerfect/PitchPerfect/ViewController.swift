@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     // Recording label changes to start and stop actions.
     @IBOutlet weak var recordingLabel: UILabel!
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var stopRecordingButton: UIButton!
     
     // IB Action to start recording.
     @IBAction func recordAudio(_ sender: Any) {
@@ -26,7 +28,7 @@ class ViewController: UIViewController {
         // Caveman debugging
         print("Stop Recording Button pressed.")
     }
-    
+
     // Standard template for
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         print("viewDidLoad function loaded.")
     }
     
+    // Read documentation for viewWillAppear
     override func viewWillAppear(_ animated: Bool) {
         // super.viewWillAppear(<#T##animated: Bool##Bool#>)
         super.viewWillAppear(animated)
@@ -43,7 +46,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

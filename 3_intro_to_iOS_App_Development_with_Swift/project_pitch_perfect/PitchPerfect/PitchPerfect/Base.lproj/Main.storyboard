@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c1-wE-qCD">
-                                <rect key="frame" x="130" y="587" width="155" height="155"/>
+                                <rect key="frame" x="129.5" y="587" width="155" height="155"/>
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrc-M2-mkp"/>
@@ -50,7 +50,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="uq6-aI-Fx2" id="xKJ-td-KNK"/>
                         <outlet property="recordingLabel" destination="aKx-TS-pOE" id="Cep-ye-lpy"/>
+                        <outlet property="stopRecordingButton" destination="8c1-wE-qCD" id="Ixn-o0-aKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
