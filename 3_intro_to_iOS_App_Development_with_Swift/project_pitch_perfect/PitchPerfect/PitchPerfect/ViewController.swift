@@ -17,16 +17,19 @@ class ViewController: UIViewController {
     
     // IB Action to start recording.
     @IBAction func recordAudio(_ sender: Any) {
-        // Caveman debugging
-        print("Record button was pressed.")
         recordingLabel.text = "Recording in Progress"
+        // Recording is in progress so stopRecording should be active.
+        stopRecordingButton.isEnabled = true
+        // User is already recording at this point.
+        recordButton.isEnabled = false
     }
     
     // IB Action to stop recording. Wire this button to be
     // disabled when the recording button is not in use.
     @IBAction func stopRecording(_ sender: Any) {
-        // Caveman debugging
-        print("Stop Recording Button pressed.")
+        recordButton.isEnabled = true
+        stopRecordingButton.isEnabled = false
+        recordingLabel.text = "Tap to record."
     }
 
     // Standard template for
@@ -34,6 +37,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("viewDidLoad function loaded.")
+        // Disables the Stop stopRecordingButton by default.
+        stopRecordingButton.isEnabled = false
     }
     
     // Read documentation for viewWillAppear
