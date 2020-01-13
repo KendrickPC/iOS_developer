@@ -61,14 +61,30 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="101.78571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="pC7-UZ-Y87">
             <objects>
-                <viewController id="bBh-nZ-xeX" sceneMemberID="viewController">
+                <viewController id="bBh-nZ-xeX" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sAs-7I-6YT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jb2-5r-86f">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TnG-Kv-Bgb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jb2-5r-86f" firstAttribute="top" secondItem="rC7-71-95U" secondAttribute="top" id="392-iX-H8d"/>
+                            <constraint firstItem="Jb2-5r-86f" firstAttribute="leading" secondItem="rC7-71-95U" secondAttribute="leading" id="7Ux-RV-MWs"/>
+                            <constraint firstItem="rC7-71-95U" firstAttribute="trailing" secondItem="Jb2-5r-86f" secondAttribute="trailing" id="Ms0-r1-SFa"/>
+                            <constraint firstItem="rC7-71-95U" firstAttribute="bottom" secondItem="Jb2-5r-86f" secondAttribute="bottom" id="hIk-Xk-Xez"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rC7-71-95U"/>
                     </view>
                     <navigationItem key="navigationItem" id="F3H-dg-6BZ"/>
