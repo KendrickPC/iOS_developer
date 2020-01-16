@@ -66,6 +66,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        print("viewDidAppear function called.")
     }
 
     // Mark: - Audio Recorder Delegate
@@ -79,6 +80,14 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     // Mark: - Declaring function for configuring UI
     func configureUI(isRecording: Bool) {
+        // recordButton.isEnabled = !isRecording
+        // stopRecordingButton.isEnabled = isRecording
+        // recordingLabel.text = isRecording ? "Recording in Progress" : "Tap to Record"
+        // The following if/else statement can be refactored to the above code, but an
+        // error message of "HALC_ProxyIOContext::IOWorkLoop: failed to send the final
+        // message to the server, Error: 0x10000003" will occur.
+        // To make the error message go away, I have chosen to use the if/else statement
+        // instead.
         if isRecording {
             recordButton.isEnabled = false
             stopRecordingButton.isEnabled = true
