@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  ColorMakerWithSliders
+//  ColorPickerWithSliders
 //
-//  Created by Kenneth Chang on 1/22/20.
+//  Created by Kenneth Chang on 1/23/20.
 //  Copyright © 2020 Kenneth P. Chang. All rights reserved.
 //
 
@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("viewDidLoad function loaded.")
     }
 
 
