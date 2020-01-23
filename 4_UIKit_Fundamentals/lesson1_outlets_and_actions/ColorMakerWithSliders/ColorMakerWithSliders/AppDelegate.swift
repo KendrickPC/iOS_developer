@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Color Maker With Sliders
+//  ColorMakerWithSliders
 //
-//  Created by Kenneth Chang on 1/21/20.
+//  Created by Kenneth Chang on 1/22/20.
 //  Copyright © 2020 Kenneth P. Chang. All rights reserved.
 //
 
